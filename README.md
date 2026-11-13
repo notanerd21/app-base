@@ -1,7 +1,7 @@
 # app-base
 
-Shared runtime base image for the app-host apps: Node 22 (Debian bookworm) + Google Chrome, weasyprint 68.1,
-ghostscript, ffmpeg, libvips (sharp), pango/harfbuzz, fonts, build tools.
+Shared runtime base image for the app-host apps: Node 22 (Debian 13 trixie since 13.11.2026, app-host 10) + Google Chrome, weasyprint 68.1,
+ghostscript, ffmpeg 7.1 (Debian; the build fails below 7), libvips (sharp), pango/harfbuzz, fonts, build tools.
 
 ```
 FROM ghcr.io/notanerd21/app-base:node22-20261109 # fixed tag — apps always pin one of these
